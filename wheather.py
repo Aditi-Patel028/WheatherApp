@@ -7,7 +7,7 @@ import json
 
 def fetch_weather():
     city = city_name.get()
-    api_key = 'd1b4e3cadefd41fc6143b29eb17eba21'
+    api_key = '{YOUR_API_KEY}'
     base_url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
     response = requests.get(base_url)
     data = response.json()
